@@ -1,0 +1,41 @@
+
+def get_hash(inputs,size_dict):
+    return sorted(sorted(size_dict[j] for j in i)for i in inputs)
+
+data={}
+
+
+def perm(list_hash):
+    
+
+def compare_i(inputs1,size_dict1,inputs2,size_dict2,edge_dict):
+    if len(inputs1)==0 and len(inputs2)==0: return True
+    hash1=get_hash(inputs1,size_dict1)
+    hash2=get_hash(inputs2,size_dict2)
+    for i in range(len(inputs2)):
+        if hash1[0]==hash2[i]: #maybe a fit
+            
+    return False
+    
+
+def compare(inputs1,size_dict1, inputs2,size_dict2):
+    hash1=get_hash(inputs1,size_dict1)
+    hash2=get_hash(inputs2,size_dict2)
+    if hash1!=hash2: return False
+    for i in range(len(inputs1)):
+        for j in range(len(inputs2)):
+            
+
+def match(inputs,size_dict):
+    h=get_hash(inputs,size_dict)
+    a=data.get(h,default=[])
+    
+if __name__=='__main__':
+    inputs1=[['a','b'],['b','c']]
+    size_dict1={'a':2,'b':3,'c':4}
+    
+    inputs2=[['x','y'],['y','z']]
+    size_dict2={'x':2,'y':3,'z':4}
+    
+    print(compare(inputs1,size_dict1, inputs2,size_dict2))
+    
